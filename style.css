@@ -1,0 +1,155 @@
+@font-face {
+  font-family: navigation;
+  src: url(./font/Alimama/AlimamaFangYuanTiVF-Thin.woff);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: navigation;
+  src: url(./font/Alimama/AlimamaFangYuanTiVF-Thin.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: student;
+  src: url(./font/SmileySans/SmileySans-Oblique.woff);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: student;
+  src: url(./font/SmileySans/SmileySans-Oblique.woff2);
+  font-display: swap;
+}
+
+html,body {
+	height: 100%;
+}
+
+body {
+	background-image: url(./img/bg-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+body>div:first-child {
+	height: 100%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+
+nav {
+	display: table;
+	width: 100%;
+	height: 50px;
+}
+
+nav a {
+	display: table-cell;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 50px;
+	color: #fff;
+	font-family: navigation;
+}
+
+nav a:nth-child(1) {
+	background-color: blueviolet;
+}
+
+nav a:nth-child(2) {
+	background-color: mediumpurple;
+}
+
+nav a:nth-child(3) {
+	background-color: magenta;
+}
+
+.iconfont {
+	font-size: 24px;
+}
+
+.picture {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	border-radius: 50%;
+	background-color: #000;
+	transition: .5s;
+	z-index: 1;
+}
+
+img {
+	width: 300px;
+}
+
+.picture:hover {
+	background-color: #fff;
+	box-shadow: 0 0 20px 20px #fff;
+	transform: rotate(360deg);
+	transition: .5s;
+}
+
+.students {
+	position: relative;
+	z-index: 2;
+}
+
+.container {
+	font-family: student;
+}
+
+.students a {
+	text-decoration: none;
+}
+
+.name {
+	overflow: hidden;
+	transition: .5s;
+	overflow: hidden;
+	height: 100px;
+	line-height: 100px;
+}
+
+.name:hover {
+	font-size: 72px;
+	color: #fff;
+	transition: .5s;
+}
+
+.female:hover {
+	background-color: hotpink;
+}
+
+.male:hover {
+	background-color: cornflowerblue;
+}
+
+@media only screen and (max-width:992px) {
+	.picture {
+		margin-left: -100px;
+		margin-top: -100px;
+	}
+	img {
+		width: 200px;
+	}
+	nav a,.iconfont {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width:576px) {
+	nav a {
+		display: block;
+	}
+}
